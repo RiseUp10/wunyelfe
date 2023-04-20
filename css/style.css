@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-prim: rgba(181,200,15);
+  --color-sec: rgba(212,49,33);
+  --color-terc: rgba(67,66,92);
+}
+
+h2  {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+header  {
+  background-image: url(../imgs/Wunyelfe-1-color-tiny.png);
+  backdrop-filter: blur(10px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__boton  {
+  background-color: var(--color-prim);
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  align-items: center;
+  transition: all 500ms;
+}
+
+.hero__boton:hover  {
+  transform: scale(1.2,1.2);
+  background-color: var(--color-terc);
+}
+
+.quienesSomos {
+  background-color: var(--color-terc);
+  color: white;
+  
+  padding: 1rem 0;
+}
+
+.queHacemos  {
+  background-color: var(--color-prim);
+  color:white;
+}
+
+.misionYVision__img  {
+  border-radius: 15px;
+  max-width: 350px;
+  width:100%;
+}
+
+.misionYVision__col  {
+  margin-top: -150px;
+}
+
+/*Contacto*/
+
+.contacto {
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-top: var(--color-terc) solid 3px;
+  background-image: linear-gradient(to bottom,var(--color-prim),var(--color-terc));
+  border-radius: 20px;
+}
+
+.contacto__input  {
+  border: 3px solid var(--color-terc);
+}
+
+.btn  {
+  background-color: var(--color-prim);
+  border: 3px solid var(--color-terc);
+  font-size: 1rem;
+  color: var(--color-terc);
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.btn--hero  {
+  position: absolute;
+  top: 50%;
+  max-width:350px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.btn:hover  {
+    background-color: var(--color-terc);
+    color: var(--color-prim);
+    border: 3px solid var(--color-prim);
+  }
+
+/*Footer*/
+
+footer  {
+  border-top: 2px solid var(--color-prim);
+  margin-top: 2rem;
+  padding: 2rem 0 0 0;
+  background-color: var(--color-terc);
+}
+
+.bi {
+  font-size: 40px;
+  color: white;
+}
+
+.footer__logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.footer__base {
+  background-color: var(--color-prim);
+  padding: 0.3rem 0;
+}
+
+.footer__base--text {
+    font-size: 0.75rem;
+    color: black;
+    text-align: center;
+    padding-top: 8px;
+  }
+
+.footer__riseup {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+} 
+
+@Media only screen and (min-width: 766px)  {
+  header  {
+    height: 100vh;
+  }
+
+  h2  {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .logo--hero {
+    height: 100vh;
+    width: auto;
+  }
+
+  .misionYVision__col  {
+      margin-top: -50px;
+    }
+}
